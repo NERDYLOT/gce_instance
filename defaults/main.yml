@@ -1,2 +1,9 @@
 ---
 # defaults file for gce_instance
+gce_app: "nginxpgsql"
+gce_vms: "nginx"
+credentials: "/root/downloads/wakanda-209916-715c274ea65e.json"
+service_account: "ansible@wakanda-209916.iam.gserviceaccount.com"
+project: wakanda-209916
+vm_type: f1-micro
+vm_image:
