@@ -2,7 +2,6 @@
 # tasks file for gce_instance
 
   - name: Create VM instance for "{{ gce_app }}"
-    delegate_to: localhost
     gce:
       instance_names: "{{ gce_vms }}"
       machine_type: "{{ vm_type }}"
@@ -13,6 +12,7 @@
       credentials_file: "{{ credentials }}"
       project_id: "{{ project }}"
     register: gce
+  
   - name: spit out IP
     debug:
       msg: "here is the IP {{ item.public_ip }}"
