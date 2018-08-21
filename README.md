@@ -6,6 +6,7 @@ Create a GCE instance.
 Requirements
 ------------
 
+have a service account in GCE
 
 Role Variables
 --------------
