@@ -13,6 +13,7 @@
       credentials_file: "{{ credentials }}"
       project_id: "{{ project }}"
     register: gce
+  
   - name: spit out IP
     debug:
       msg: "here is the IP {{ item.public_ip }}"
